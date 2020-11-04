@@ -34,9 +34,26 @@ El desempeño del autoencoder se puede medir con diferentes funciones de costo. 
 L(\hat{x}, x) = \dfrac{1}{n} \sum_{i=1}^n (\hat{x}_i - x_i)^2.
 \end{equation}
 
+\section{Dataset}
+
+El dataset MNIST \cite{LeCun} consiste imágenes de dígitos escritos a mano, recolectados por el Instituto Nacional de Estándares y Tecnología de Estados Unidos (NIST, por sus siglas en inglés). Las imágenes tienen un tamaño de $28\times28$ pixeles en escala de grises con 256 valores de intensidad. Además, han sido preprocesadas de manera tal de que los números se ubiquen relativamente centrados y verticales. Cada imagen cuenta a su vez con una etiqueta, que informa el dígito correspondiente. 
+
+En la figura \ref{fig:ejemplos} se pueden ver algunos de los elementos del dataset.
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[scale=0.45]{ejemplos.pdf}
+\caption{\label{fig:ejemplos} Algunos ejemplos del dataset MNIST.}
+\end{figure}
+
+El dataset está dividido en un conjunto de entrenamiento de $60000$ imágenes, y un conjunto de evaluación de $10000$. 
+
+
+
 \begin{thebibliography}{9}
-\bibitem{strogatz} 
-Strogatz, Steven H. Nonlinear Dynamics and Chaos with Applications to Physics, Biology, Chemistry, and Engineering (second edition). CRC Press.
+\bibitem{LeCun} 
+Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner. "Gradient-based learning applied to document recognition." Proceedings of the IEEE, 86(11):2278-2324, November 1998.
 \end{thebibliography}
 
 \end{document}
